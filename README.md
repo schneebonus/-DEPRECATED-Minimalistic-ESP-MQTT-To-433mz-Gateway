@@ -42,3 +42,4 @@ There is no webapp or api.
 - port project to esp32 and use firmware encryption to protect the passwords
 - publish sensor values to mqtt channels
 - publish "i am alive" to mqtt channels
+- lite version without 433mhz for sonoff remotes

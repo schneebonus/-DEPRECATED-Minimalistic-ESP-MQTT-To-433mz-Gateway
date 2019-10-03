@@ -1,2 +1,28 @@
 # Minimalistic-ESP-MQTT-To-433mz-Gateway
 A robust and minimalistic mqtt to 433mhz gateway for the esp8266
+
+## Requirenments
+
+- PubSubClient.h ( https://pubsubclient.knolleary.net/ )
+- RCSwitch.h ( https://github.com/sui77/rc-switch )
+- ESP8266WiFi.h ( https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266WiFi )
+- Ticker.h ( https://github.com/esp8266/Arduino/tree/master/libraries/Ticker )
+
+## Install
+
+- set wifi settings (ssid and passsword)
+- set mqtt settings (mqttServer, mqttPort, mqttUser, mqttPassword)
+- set 433mhz devices (deviceCount, devices)
+- deploy to your esp8266
+
+## Background information
+
+- 433mhz sender is expected to be on port 9 of the esp8266
+- main loop has to finish every cycle in 10 seconds or the watchdog restarts the device
+- if wifi reconnect fails 5 times in a row, the revice restarts
+- there are no debugging outputs or serial prints
+
+## Further Improvements:
+
+- MQTT oder TLS ( + verify certificate fingerprint )
+- port project to esp32 and use firmware encryption to protect the passwords

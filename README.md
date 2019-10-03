@@ -38,7 +38,7 @@ There is no webapp or api.
 
 ### Further Improvements:
 
-- MQTT oder TLS ( + verify certificate fingerprint )
+- MQTT over TLS ( + verify certificate fingerprint )
 - port project to esp32 and use firmware encryption to protect the passwords
 - publish sensor values to mqtt channels
 - publish "i am alive" to mqtt channels

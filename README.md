@@ -1,5 +1,7 @@
 ## Minimalistic MQTT to 433mz remote socket gateway for ESP8266
 
+## DEPRECATED: Use https://github.com/schneebonus/ESP8266-MQTT-To-433mz-Gateway for a better version without hardcoded devices.
+
 A robust and minimalistic mqtt to 433mhz gateway for the esp8266.
 Enables cheap wireless sockets from the DIY store to be controlled via the MQTT home automation server.
 This project follows a minimalist approach, designed solely for reliability.
